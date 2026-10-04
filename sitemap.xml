@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://a2fshipping.com/</loc>
+    <lastmod>2026-10-04T21:32:01.151Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/account/</loc>
+    <lastmod>2026-10-04T21:31:54.877Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/terms/</loc>
+    <lastmod>2026-10-04T21:31:45.871Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/privacy/</loc>
+    <lastmod>2026-10-04T21:31:38.443Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/policies/</loc>
+    <lastmod>2026-10-04T21:31:31.104Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/how-it-works/</loc>
+    <lastmod>2026-10-04T21:31:19.837Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/contact/</loc>
+    <lastmod>2026-10-04T21:31:12.522Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/track/</loc>
+    <lastmod>2026-10-04T21:31:05.571Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/shop-ship/</loc>
+    <lastmod>2026-10-04T21:30:58.020Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/pickup/</loc>
+    <lastmod>2026-10-04T21:30:50.507Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/quote/</loc>
+    <lastmod>2026-10-04T21:30:43.223Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://a2fshipping.com/faq/</loc>
     <lastmod>2026-10-04T21:30:23.669Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -11,63 +66,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://a2fshipping.com/track/</loc>
-    <lastmod>2026-10-04T20:18:06.974Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/terms/</loc>
-    <lastmod>2026-10-04T20:18:01.603Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/shop-ship/</loc>
-    <lastmod>2026-10-04T20:17:56.631Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/quote/</loc>
-    <lastmod>2026-10-04T20:17:51.593Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/privacy/</loc>
-    <lastmod>2026-10-04T20:17:46.640Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/policies/</loc>
-    <lastmod>2026-10-04T20:17:40.857Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/pickup/</loc>
-    <lastmod>2026-10-04T20:17:35.253Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://a2fshipping.com/logo/</loc>
     <lastmod>2026-10-04T20:17:30.026Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/how-it-works/</loc>
-    <lastmod>2026-10-04T20:17:25.483Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/contact/</loc>
-    <lastmod>2026-10-04T20:17:19.342Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/account/</loc>
-    <lastmod>2026-10-04T20:17:14.602Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/</loc>
-    <lastmod>2026-10-04T20:17:09.637Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
