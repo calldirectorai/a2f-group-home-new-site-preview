@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow"><!-- PREVIEW ONLY: remove when the site goes live -->
+
+
+<link rel="icon" href="https://a2f-group.com/images/logo.png">
+
+
+<!-- SEO Meta Tags -->
+<title>Privacy Policy – A2F Group</title>
+<meta name="description" content="How A2F Group collects, uses and protects your information, including how we contact you by phone, text, WhatsApp and email." />
+<meta property="og:title" content="Privacy Policy – A2F Group" />
+<meta property="og:description" content="How A2F Group collects, uses and protects your information, including how we contact you by phone, text, WhatsApp and email." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Privacy Policy – A2F Group" />
+<meta name="twitter:description" content="How A2F Group collects, uses and protects your information, including how we contact you by phone, text, WhatsApp and email." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mute19pu-oyc9d";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.calldirector.ai/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=7759');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='AWh6SDY';
+  var apiBase='https://app.calldirector.ai';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='AWh6SDY';
+  var apiBase='https://app.calldirector.ai';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="nav">
+  <a class="brand" data-route="" href="#"><img src="https://a2f-group.com/images/logo.png" alt="A2F Group logo" width="40" height="40"><span>A2F GROUP</span></a>
+  <div class="sp"></div>
+  <a class="back" data-route="" href="#"><span data-l="en">← Back to home</span><span data-l="fr">← Retour à l'accueil</span></a>
+  <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" class="on">EN</button><button type="button" data-lang="fr">FR</button></div>
+</div></header>
+
+<main class="wrap">
+  <div class="eyebrow"><span data-l="en">Legal</span><span data-l="fr">Mentions légales</span></div>
+  <h1><span data-l="en">Privacy Policy</span><span data-l="fr">Politique de confidentialité</span></h1>
+  <p class="sub"><span data-l="en">Last updated: October 4, 2026</span><span data-l="fr">Dernière mise à jour : 4 octobre 2026</span></p>
+
+  <div data-l="en">
+    <p>A2F Group ("A2F", "we", "us") provides package shipping and Shop &amp; Ship services between the United States and West Africa. This policy explains what information we collect, how we use it, and the choices you have.</p>
+
+    <h2>Information we collect</h2>
+    <ul>
+      <li><strong>Information you give us:</strong> your name, email address, phone number, pickup and delivery addresses, details about the items you want shipped or purchased, and any message you send us.</li>
+      <li><strong>Information from using our site:</strong> your language choice, saved in your browser so the site remembers it. We do not run advertising trackers on this site.</li>
+      <li><strong>Information about your shipment:</strong> status and tracking details that we create as your package moves.</li>
+    </ul>
+
+    <h2>How we use it</h2>
+    <ul>
+      <li>To prepare quotes, schedule pickups, buy items you ask us to buy, and ship and deliver your packages</li>
+      <li>To arrange customs clearance and deliver to your destination</li>
+      <li>To contact you about your request or shipment</li>
+      <li>To answer your questions and improve our service</li>
+      <li>To keep our systems secure and meet legal obligations</li>
+    </ul>
+
+    <h2>Contacting you: phone, text, WhatsApp and email</h2>
+    <p>When you give us your phone number or email address, you agree that we may contact you about your request and your shipment by phone call, text message, WhatsApp message or email, in the way you chose. These are service messages, such as confirmations, quotes, pickup details and shipment updates. We do not use your number for unrelated marketing without your permission. Message and data rates from your carrier may apply. You can opt out at any time by replying STOP to a text message, telling us on WhatsApp, or contacting us using the details below.</p>
+
+    <h2>Who we share it with</h2>
+    <p>We share information only as needed to provide the service: with carriers and shipping partners, customs authorities and clearing agents, payment providers, and technology providers that help us run this website, store requests and send messages. They may use your information only to provide services to us. We do not sell your personal information. We may also share information when the law requires it.</p>
+
+    <h2>How long we keep it</h2>
+    <p>We keep information for as long as we need it to provide our services, resolve disputes, keep records and follow the law. When we no longer need it, we delete or anonymize it.</p>
+
+    <h2>Your choices</h2>
+    <p>You can ask us to tell you what information we hold about you, correct it, or delete it, and you can ask us to stop contacting you. Contact us using the details below and we will respond as soon as we reasonably can. Some information we must keep to meet legal or customs requirements.</p>
+
+    <h2>Security</h2>
+    <p>We use reasonable measures to protect your information. No website or system is completely secure, so we cannot guarantee absolute security.</p>
+
+    <h2>Children</h2>
+    <p>Our services are for adults. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy from time to time. The date at the top shows when it was last changed.</p>
+
+    <h2>Contact us</h2>
+    <p>A2F Group, Minneapolis, USA<br>Phone: +1 (612) 756-5212<br>Email: <a class="lnk" href="mailto:contact@a2f-group.com">contact@a2f-group.com</a><br>Africa office: Port Autonome de Lomé, Togo, +228 91 09 53 08</p>
+  </div>
+
+  <div data-l="fr">
+    <p>A2F Group (« A2F », « nous ») propose des services d'expédition de colis et d'Achat &amp; Expédition entre les États-Unis et l'Afrique de l'Ouest. Cette politique explique quelles informations nous collectons, comment nous les utilisons et les choix dont vous disposez.</p>
+
+    <h2>Informations que nous collectons</h2>
+    <ul>
+      <li><strong>Informations que vous nous donnez :</strong> votre nom, adresse e-mail, numéro de téléphone, adresses d'enlèvement et de livraison, détails sur les articles à expédier ou à acheter, et tout message que vous nous envoyez.</li>
+      <li><strong>Informations liées à l'usage du site :</strong> votre choix de langue, enregistré dans votre navigateur pour que le site s'en souvienne. Nous n'utilisons pas de traceurs publicitaires sur ce site.</li>
+      <li><strong>Informations sur votre envoi :</strong> l'état et les détails de suivi que nous créons au fil du trajet de votre colis.</li>
+    </ul>
+
+    <h2>Comment nous les utilisons</h2>
+    <ul>
+      <li>Pour préparer des devis, planifier des enlèvements, acheter les articles que vous nous demandez d'acheter, et expédier et livrer vos colis</li>
+      <li>Pour organiser le dédouanement et la livraison à destination</li>
+      <li>Pour vous contacter au sujet de votre demande ou de votre envoi</li>
+      <li>Pour répondre à vos questions et améliorer notre service</li>
+      <li>Pour assurer la sécurité de nos systèmes et respecter nos obligations légales</li>
+    </ul>
+
+    <h2>Vous contacter : téléphone, SMS, WhatsApp et e-mail</h2>
+    <p>Lorsque vous nous donnez votre numéro de téléphone ou votre adresse e-mail, vous acceptez que nous vous contactions au sujet de votre demande et de votre envoi par appel téléphonique, SMS, message WhatsApp ou e-mail, selon le moyen que vous avez choisi. Il s'agit de messages de service, comme des confirmations, devis, détails d'enlèvement et mises à jour d'envoi. Nous n'utilisons pas votre numéro pour du marketing sans rapport avec votre demande sans votre autorisation. Des frais de messagerie et de données de votre opérateur peuvent s'appliquer. Vous pouvez vous désinscrire à tout moment en répondant STOP à un SMS, en nous le disant sur WhatsApp, ou en nous contactant via les coordonnées ci-dessous.</p>
+
+    <h2>Avec qui nous les partageons</h2>
+    <p>Nous ne partageons des informations que dans la mesure nécessaire au service : avec les transporteurs et partenaires d'expédition, les autorités douanières et agents en douane, les prestataires de paiement, et les prestataires technologiques qui nous aident à faire fonctionner ce site, stocker les demandes et envoyer des messages. Ils ne peuvent utiliser vos informations que pour nous fournir des services. Nous ne vendons pas vos informations personnelles. Nous pouvons aussi partager des informations lorsque la loi l'exige.</p>
+
+    <h2>Combien de temps nous les conservons</h2>
+    <p>Nous conservons les informations aussi longtemps que nécessaire pour fournir nos services, régler les litiges, tenir nos registres et respecter la loi. Lorsque nous n'en avons plus besoin, nous les supprimons ou les anonymisons.</p>
+
+    <h2>Vos choix</h2>
+    <p>Vous pouvez nous demander quelles informations nous détenons sur vous, les corriger ou les supprimer, et nous demander de ne plus vous contacter. Contactez-nous via les coordonnées ci-dessous et nous répondrons dès que raisonnablement possible. Certaines informations doivent être conservées pour respecter des exigences légales ou douanières.</p>
+
+    <h2>Sécurité</h2>
+    <p>Nous prenons des mesures raisonnables pour protéger vos informations. Aucun site ni système n'est totalement sûr ; nous ne pouvons donc pas garantir une sécurité absolue.</p>
+
+    <h2>Enfants</h2>
+    <p>Nos services s'adressent aux adultes. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 13 ans.</p>
+
+    <h2>Modifications de cette politique</h2>
+    <p>Nous pouvons mettre à jour cette politique de temps à autre. La date en haut de page indique la dernière modification.</p>
+
+    <h2>Nous contacter</h2>
+    <p>A2F Group, Minneapolis, États-Unis<br>Téléphone : +1 (612) 756-5212<br>E-mail : <a class="lnk" href="mailto:contact@a2f-group.com">contact@a2f-group.com</a><br>Bureau Afrique : Port Autonome de Lomé, Togo, +228 91 09 53 08</p>
+  </div>
+</main>
+
+<script>
+function siteRoot(){var h=location.hostname,p=location.pathname.split("/").filter(Boolean);return /github\.io$/.test(h)?"/"+(p[0]||"")+"/":"/";}
+document.querySelectorAll("[data-route]").forEach(function(a){a.href=siteRoot()+a.getAttribute("data-route");});
+var lang="en";try{lang=localStorage.getItem("a2f_lang")||((navigator.language||"").slice(0,2)==="fr"?"fr":"en");}catch(e){}
+function setLang(l){lang=l;try{localStorage.setItem("a2f_lang",l);}catch(e){}document.documentElement.lang=l;document.querySelectorAll(".lang button").forEach(function(b){b.classList.toggle("on",b.getAttribute("data-lang")===l);});}
+document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){setLang(b.getAttribute("data-lang"));});});
+setLang(lang);
+</script>
+<script id="a2f-nav">(function(){var items=[["home",""],["quote","quote/"],["shop","shop-ship/"],["pickup","pickup/"],["track","track/"],["how","how-it-works/"],["contact","contact/"]];var legal=[["pol","policies/"],["priv","privacy/"],["terms","terms/"],["acct","account/"]];var L={en:{home:"Home",quote:"Get a Quote",shop:"Shop & Ship",pickup:"Pickup",track:"Track",how:"How it works",contact:"Contact",pol:"Policies",priv:"Privacy",terms:"Terms",acct:"My account"},fr:{home:"Accueil",quote:"Devis",shop:"Achat & Expédition",pickup:"Enlèvement",track:"Suivi",how:"Comment ça marche",contact:"Contact",pol:"Conditions d'expédition",priv:"Confidentialité",terms:"Conditions d'utilisation",acct:"Mon compte"}};function root(){var h=location.hostname,p=location.pathname.split("/").filter(Boolean);return /github\.io$/.test(h)?"/"+(p[0]||"")+"/":"/";}var R=root();var st=document.createElement("style");st.textContent=".a2f-strip{position:sticky;z-index:40;background:rgba(7,9,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid #1f2a40;display:flex;gap:8px;overflow-x:auto;padding:10px 4%;scrollbar-width:none}.a2f-strip::-webkit-scrollbar{display:none}.a2f-strip a{flex:none;padding:8px 16px;border-radius:999px;border:1px solid #1f2a40;color:#9aa7bd;font:600 .88rem Inter,system-ui,sans-serif;white-space:nowrap;text-decoration:none}.a2f-strip a.on{background:#e0b04a;color:#1a1405;border-color:#e0b04a}.a2f-strip.mo{display:none}@media(max-width:959px){.a2f-strip.mo{display:flex}}.a2f-foot{border-top:1px solid #1f2a40;padding:26px 4% 40px;text-align:center;color:#9aa7bd;font:.88rem/2 Inter,system-ui,sans-serif}.a2f-foot a,.a2f-legal a{color:#9aa7bd;margin:0 8px;text-decoration:none;white-space:nowrap}.a2f-foot a:hover,.a2f-legal a:hover{color:#f4d88a}.a2f-legal{width:min(1120px,92%);margin:10px auto 0;text-align:center;font:.84rem/2 Inter,system-ui,sans-serif;color:#9aa7bd}";document.head.appendChild(st);var hd=document.querySelector("header");var home=!!document.querySelector("nav.links");var nav=document.createElement("nav");nav.className="a2f-strip"+(home?" mo":"");nav.setAttribute("aria-label","Pages");var ex=document.querySelector("footer");var ft=null,lg2=null;if(!ex){ft=document.createElement("div");ft.className="a2f-foot";document.body.appendChild(ft);}else{lg2=document.createElement("div");lg2.className="a2f-legal";ex.appendChild(lg2);}function lg(){try{return localStorage.getItem("a2f_lang")==="fr"?"fr":"en";}catch(e){return "en";}}function links(a,l){return a.map(function(i){return '<a href="'+R+i[1]+'">'+l[i[0]]+'</a>';}).join("");}function render(){var l=L[lg()];var c=location.pathname.replace(/\/+$/,"");nav.innerHTML=items.map(function(i){var href=R+i[1];var on=(i[1]===""?(c===""||c===R.replace(/\/+$/,"")):c.indexOf("/"+i[1].replace(/\/$/,""))>-1);return '<a href="'+href+'"'+(on?' class="on" aria-current="page"':'')+'>'+l[i[0]]+'</a>';}).join("");if(ft){ft.innerHTML='© 2026 A2F GROUP<br>'+links(items,l)+'<br>'+links(legal,l);}if(lg2){lg2.innerHTML=links(legal,l);}}if(hd){hd.parentNode.insertBefore(nav,hd.nextSibling);nav.style.top=hd.offsetHeight+"px";}render();document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){setTimeout(render,0);});});})();</script>
+</body>
+</html>
