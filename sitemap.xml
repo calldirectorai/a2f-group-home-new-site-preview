@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://a2fshipping.com/track/</loc>
-    <lastmod>2026-10-04T05:03:09.392Z</lastmod>
+    <loc>https://a2fshipping.com/</loc>
+    <lastmod>2026-10-04T05:06:05.705Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://a2fshipping.com/shop-ship/</loc>
-    <lastmod>2026-10-04T05:03:04.456Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/quote/</loc>
-    <lastmod>2026-10-04T05:02:59.679Z</lastmod>
+    <lastmod>2026-10-04T05:05:02.718Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://a2fshipping.com/pickup/</loc>
-    <lastmod>2026-10-04T05:02:55.014Z</lastmod>
+    <lastmod>2026-10-04T05:05:02.255Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://a2fshipping.com/</loc>
-    <lastmod>2026-10-04T05:02:50.336Z</lastmod>
+    <loc>https://a2fshipping.com/quote/</loc>
+    <lastmod>2026-10-04T05:05:01.996Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/track/</loc>
+    <lastmod>2026-10-04T05:04:25.938Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
