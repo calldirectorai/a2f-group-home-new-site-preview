@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://calldirectorai.github.io/a2f-group-home-new-site-preview/track/</loc>
-    <lastmod>2026-10-04T04:57:45.761Z</lastmod>
+    <loc>https://a2fshipping.com/</loc>
+    <lastmod>2026-10-04T05:02:42.891Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://calldirectorai.github.io/a2f-group-home-new-site-preview/pickup/</loc>
+    <loc>https://a2fshipping.com/track/</loc>
+    <lastmod>2026-10-04T04:57:50.588Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/pickup/</loc>
     <lastmod>2026-10-04T04:51:18.380Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://calldirectorai.github.io/a2f-group-home-new-site-preview/shop-ship/</loc>
+    <loc>https://a2fshipping.com/shop-ship/</loc>
     <lastmod>2026-10-04T04:51:06.242Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://calldirectorai.github.io/a2f-group-home-new-site-preview/quote/</loc>
+    <loc>https://a2fshipping.com/quote/</loc>
     <lastmod>2026-10-04T04:11:49.075Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://calldirectorai.github.io/a2f-group-home-new-site-preview/</loc>
-    <lastmod>2026-10-04T04:05:14.084Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
