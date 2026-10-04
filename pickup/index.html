@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/a2f-group-home-new-site-preview/pickup/">
+<!-- BASE:END -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow"><!-- PREVIEW ONLY: remove when the site goes live -->
+
+
+<link rel="icon" href="https://a2f-group.com/images/logo.png">
+
+
+<!-- SEO Meta Tags -->
+<title>Schedule a Pickup – A2F Group</title>
+<meta name="description" content="Schedule a package pickup with A2F Group in Minneapolis. Pick a date and time and we" />
+<meta property="og:title" content="Schedule a Pickup – A2F Group" />
+<meta property="og:description" content="Schedule a package pickup with A2F Group in Minneapolis. Pick a date and time and we" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Schedule a Pickup – A2F Group" />
+<meta name="twitter:description" content="Schedule a package pickup with A2F Group in Minneapolis. Pick a date and time and we" />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mutcdugx-bz2mi";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.calldirector.ai/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=7753');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='42rjwxPRW';
+  var apiBase='https://app.calldirector.ai';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='42rjwxPRW';
+  var apiBase='https://app.calldirector.ai';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="nav">
+  <a class="brand" data-route="" href="#"><img src="https://a2f-group.com/images/logo.png" alt="A2F Group logo" width="40" height="40"><span>A2F GROUP</span></a>
+  <div class="sp"></div>
+  <a class="back" data-route="" href="#" data-i18n="back">← Back to home</a>
+  <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" class="on">EN</button><button type="button" data-lang="fr">FR</button></div>
+</div></header>
+
+<main class="wrap" id="root">
+  <div id="formview">
+    <div class="eyebrow" data-i18n="eyebrow">Pickup</div>
+    <h1 data-i18n="h1">Schedule a pickup</h1>
+    <p class="sub" data-i18n="sub">Tell us where and when. We'll contact you to confirm the date, time and any pickup fee.</p>
+    <div class="err" id="err"></div>
+    <form id="f" novalidate>
+      <fieldset><legend data-i18n="l1">About you</legend>
+        <div class="f"><label for="nm" data-i18n="name">Full name</label><input id="nm" autocomplete="name"></div>
+        <div class="grid two">
+          <div class="f"><label for="em"><span data-i18n="email">Email</span></label><input id="em" type="email" inputmode="email" autocomplete="email"></div>
+          <div class="f"><label for="ph" data-i18n="phone">Phone</label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="+1 612 555 0123"></div>
+        </div>
+      </fieldset>
+      <fieldset><legend data-i18n="l2">Pickup address</legend>
+        <div class="f"><label for="st" data-i18n="street">Street address</label><input id="st" autocomplete="street-address"></div>
+        <div class="grid three">
+          <div class="f"><label for="ct" data-i18n="city">City</label><input id="ct" autocomplete="address-level2"></div>
+          <div class="f"><label for="sa" data-i18n="state">State</label><input id="sa" autocomplete="address-level1" placeholder="MN" maxlength="2"></div>
+          <div class="f"><label for="zp" data-i18n="zip">ZIP</label><input id="zp" autocomplete="postal-code" inputmode="numeric" placeholder="55401"></div>
+        </div>
+        <div class="f"><label for="ac"><span data-i18n="access">Access notes</span> <span data-i18n="opt">(optional)</span></label><input id="ac" data-ph="access_ph" placeholder="Gate code, call on arrival, ring bell…"></div>
+      </fieldset>
+      <fieldset><legend data-i18n="l3">When</legend>
+        <div class="grid two">
+          <div class="f"><label for="dt" data-i18n="date">Preferred date</label><input id="dt" type="date"></div>
+          <div class="f"><label for="tm" data-i18n="time">Preferred time</label>
+            <select id="tm"><option value="" data-i18n="choose">Choose…</option><option value="Morning" data-i18n="morning">Morning</option><option value="Afternoon" data-i18n="afternoon">Afternoon</option><option value="Evening" data-i18n="evening">Evening</option></select></div>
+        </div>
+      </fieldset>
+      <fieldset><legend data-i18n="l4">What we're picking up</legend>
+        <div class="grid two">
+          <div class="f"><label for="pc" data-i18n="count">Number of packages</label><input id="pc" type="number" min="1" max="99" value="1" inputmode="numeric"></div>
+          <div class="f"><label for="pd" data-i18n="desc">What's inside (roughly)</label><input id="pd" data-ph="desc_ph" placeholder="Clothes, a laptop, shoes…"></div>
+        </div>
+        <div class="f"><label for="nt"><span data-i18n="notes">Anything else we should know?</span> <span data-i18n="opt">(optional)</span></label><textarea id="nt"></textarea></div>
+      </fieldset>
+      <div class="hp" aria-hidden="true"><label>Website</label><input id="web" tabindex="-1" autocomplete="off"></div>
+      <p class="note" data-i18n="fee">We'll confirm the pickup fee when we contact you. No payment is taken on this page.</p>
+      <button class="btn gold" type="submit" id="go" data-i18n="send">Request pickup</button>
+    </form>
+  </div>
+  <div id="doneview" style="display:none"></div>
+</main>
+
+<script>
+var WEBHOOK="https://app.calldirector.ai/api/webhooks/flow/6459/98c55ef3a167bc353087239525fe0584c23faa769a1a0bf1ccd80b4031ad29c1";
+var WHATSAPP_NUMBER="16127565212"; // TODO: confirm which A2F number is on WhatsApp
+var PHONE_TEL="+16127565212";
+function siteRoot(){var h=location.hostname,p=location.pathname.split("/").filter(Boolean);return /github\.io$/.test(h)?"/"+(p[0]||"")+"/":"/";}
+function routes(sc){(sc||document).querySelectorAll("[data-route]").forEach(function(a){a.href=siteRoot()+a.getAttribute("data-route");});}
+routes();
+
+var T={
+en:{back:"← Back to home",eyebrow:"Pickup",h1:"Schedule a pickup",sub:"Tell us where and when. We'll contact you to confirm the date, time and any pickup fee.",
+ l1:"About you",name:"Full name",email:"Email",phone:"Phone",l2:"Pickup address",street:"Street address",city:"City",state:"State",zip:"ZIP",access:"Access notes",opt:"(optional)",access_ph:"Gate code, call on arrival, ring bell…",
+ l3:"When",date:"Preferred date",time:"Preferred time",choose:"Choose…",morning:"Morning",afternoon:"Afternoon",evening:"Evening",
+ l4:"What we're picking up",count:"Number of packages",desc:"What's inside (roughly)",desc_ph:"Clothes, a laptop, shoes…",notes:"Anything else we should know?",
+ fee:"We'll confirm the pickup fee when we contact you. No payment is taken on this page.",send:"Request pickup",sending:"Sending…",
+ e_name:"Please add your name.",e_email:"Please add a valid email so we can confirm.",e_phone:"Please add a phone number so we can reach you.",e_addr:"Please complete the pickup address.",e_date:"Please choose a date (today or later).",e_time:"Please choose a time.",e_desc:"Please tell us roughly what's inside.",
+ e_fail:"Sorry, that didn't go through. Please try again, or reach us directly:",
+ done_h:"Pickup request received!",done_p:"A confirmation is on its way to {email}. We'll contact you to confirm the details.",
+ wa_btn:"Chat on WhatsApp",track:"Track a package",home:"Back to home",wamsg:"Hello A2F Group, I just requested a pickup and have a question."},
+fr:{back:"← Retour à l'accueil",eyebrow:"Enlèvement",h1:"Planifier un enlèvement",sub:"Dites-nous où et quand. Nous vous contacterons pour confirmer la date, l'heure et les frais d'enlèvement éventuels.",
+ l1:"Vos coordonnées",name:"Nom complet",email:"E-mail",phone:"Téléphone",l2:"Adresse d'enlèvement",street:"Adresse",city:"Ville",state:"État",zip:"Code postal",access:"Précisions d'accès",opt:"(facultatif)",access_ph:"Code du portail, appelez en arrivant, sonnez…",
+ l3:"Quand",date:"Date souhaitée",time:"Heure souhaitée",choose:"Choisir…",morning:"Matin",afternoon:"Après-midi",evening:"Soir",
+ l4:"Ce que nous récupérons",count:"Nombre de colis",desc:"Contenu (approximatif)",desc_ph:"Vêtements, un ordinateur, des chaussures…",notes:"Autre chose à nous dire ?",
+ fee:"Nous confirmerons les frais d'enlèvement en vous contactant. Aucun paiement n'est demandé sur cette page.",send:"Demander l'enlèvement",sending:"Envoi…",
+ e_name:"Veuillez indiquer votre nom.",e_email:"Veuillez indiquer un e-mail valide pour la confirmation.",e_phone:"Veuillez indiquer un numéro pour que nous puissions vous joindre.",e_addr:"Veuillez compléter l'adresse d'enlèvement.",e_date:"Veuillez choisir une date (aujourd'hui ou plus tard).",e_time:"Veuillez choisir une heure.",e_desc:"Veuillez indiquer approximativement le contenu.",
+ e_fail:"Désolé, l'envoi n'a pas abouti. Réessayez, ou contactez-nous directement :",
+ done_h:"Demande d'enlèvement reçue !",done_p:"Une confirmation est en route vers {email}. Nous vous contacterons pour confirmer les détails.",
+ wa_btn:"Écrire sur WhatsApp",track:"Suivre un colis",home:"Retour à l'accueil",wamsg:"Bonjour A2F Group, je viens de demander un enlèvement et j'ai une question."}
+};
+var lang="en";try{lang=localStorage.getItem("a2f_lang")||((navigator.language||"").slice(0,2)==="fr"?"fr":"en");}catch(e){}
+function t(k){return (T[lang]||T.en)[k]||k;}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function setLang(l){
+  lang=l;try{localStorage.setItem("a2f_lang",l);}catch(e){}
+  document.documentElement.lang=l;
+  document.querySelectorAll("[data-i18n]").forEach(function(el){el.textContent=t(el.getAttribute("data-i18n"));});
+  document.querySelectorAll("[data-ph]").forEach(function(el){el.placeholder=t(el.getAttribute("data-ph"));});
+  document.querySelectorAll(".lang button").forEach(function(b){b.classList.toggle("on",b.getAttribute("data-lang")===l);});
+  if(window.__done)renderDone();
+}
+document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){setLang(b.getAttribute("data-lang"));});});
+var d=new Date(),pad=function(n){return n<10?"0"+n:n;};
+document.getElementById("dt").min=d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+
+function v(id){return document.getElementById(id).value.trim();}
+function phoneE164(p){var s=String(p||"").replace(/[^\d+]/g,"");if(!s)return "";if(s.charAt(0)==="+")return "+"+s.replace(/\D/g,"");var n=s.replace(/\D/g,"");if(n.length===10)return "+1"+n;if(n.length===11&&n.charAt(0)==="1")return "+"+n;return n;}
+function showErr(m,help){var e=document.getElementById("err");e.style.display="block";e.innerHTML=esc(m)+(help?' <a href="tel:'+PHONE_TEL+'">+1 (612) 756-5212</a> · <a href="https://wa.me/'+WHATSAPP_NUMBER+'" target="_blank" rel="noopener">WhatsApp</a>':'');e.scrollIntoView({behavior:"smooth",block:"center"});}
+
+var SENT=null;
+function renderDone(){
+  document.getElementById("formview").style.display="none";
+  var el=document.getElementById("doneview");el.style.display="block";
+  var wa="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(t("wamsg"));
+  el.innerHTML='<div class="done"><svg class="check" viewBox="0 0 84 84"><circle cx="42" cy="42" r="40"/><path d="M26 43l11 11 21-23"/></svg><h1>'+esc(t("done_h"))+'</h1><p class="sub" style="margin-inline:auto">'+esc(t("done_p").replace("{email}",SENT.email))+'</p>'+
+  '<div class="pills"><span class="pill">'+esc(SENT.date)+'</span><span class="pill">'+esc(t(SENT.time.toLowerCase()))+'</span><span class="pill">'+esc(SENT.count)+' ×</span></div>'+
+  '<div class="cta"><a class="btn wa" href="'+wa+'" target="_blank" rel="noopener">'+esc(t("wa_btn"))+'</a><a class="btn line" data-route="track/" href="#">'+esc(t("track"))+'</a><a class="btn line" data-route="" href="#">'+esc(t("home"))+'</a></div></div>';
+  routes(el);window.__done=true;window.scrollTo({top:0,behavior:"smooth"});
+}
+
+document.getElementById("f").addEventListener("submit",function(ev){
+  ev.preventDefault();
+  if(v("web")){SENT={email:v("em"),date:v("dt"),time:v("tm")||"Morning",count:v("pc")};renderDone();return;}
+  var today=document.getElementById("dt").min;
+  if(!v("nm"))return showErr(t("e_name"));
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v("em")))return showErr(t("e_email"));
+  if(v("ph").replace(/\D/g,"").length<7)return showErr(t("e_phone"));
+  if(!v("st")||!v("ct")||!v("sa")||!v("zp"))return showErr(t("e_addr"));
+  if(!v("dt")||v("dt")<today)return showErr(t("e_date"));
+  if(!v("tm"))return showErr(t("e_time"));
+  if(!v("pd"))return showErr(t("e_desc"));
+  var btn=document.getElementById("go");btn.disabled=true;btn.textContent=t("sending");
+  var addr=v("st")+", "+v("ct")+", "+v("sa").toUpperCase()+" "+v("zp");
+  var body={contactName:v("nm"),contactEmail:v("em"),contactPhone:phoneE164(v("ph")),
+   data:{pickup_address:addr,access_notes:v("ac"),preferred_date:v("dt"),preferred_time:v("tm"),package_count:v("pc")||"1",package_description:v("pd"),notes:v("nt"),language:lang,source:"website-pickup-request"}};
+  fetch(WEBHOOK,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+   .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);SENT={email:v("em"),date:v("dt"),time:v("tm"),count:v("pc")||"1"};renderDone();})
+   .catch(function(){btn.disabled=false;btn.textContent=t("send");showErr(t("e_fail"),true);});
+});
+setLang(lang);
+</script>
+</body>
+</html>
