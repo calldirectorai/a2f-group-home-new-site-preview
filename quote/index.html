@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/a2f-group-home-new-site-preview/quote/">
+<!-- BASE:END -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow"><!-- PREVIEW ONLY: remove this line when the site goes live -->
+
+
+<link rel="icon" href="https://a2f-group.com/images/logo.png">
+
+
+<!-- SEO Meta Tags -->
+<title>Get a Quote – A2F Group</title>
+<meta name="description" content="Get a shipping quote from Minneapolis to Lomé, Togo in a few taps." />
+<meta property="og:title" content="Get a Quote – A2F Group" />
+<meta property="og:description" content="Get a shipping quote from Minneapolis to Lomé, Togo in a few taps." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Get a Quote – A2F Group" />
+<meta name="twitter:description" content="Get a shipping quote from Minneapolis to Lomé, Togo in a few taps." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mutay0lt-rfhps";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.calldirector.ai/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=7752');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='cCbSgcicgk';
+  var apiBase='https://app.calldirector.ai';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='cCbSgcicgk';
+  var apiBase='https://app.calldirector.ai';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" data-route="" href="#"><img src="https://a2f-group.com/images/logo.png" alt="A2F Group logo" width="40" height="40"><span>A2F GROUP</span></a>
+    <div class="sp"></div>
+    <a class="back" data-route="" href="#" data-i18n="back">← Back to home</a>
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" class="on">EN</button><button type="button" data-lang="fr">FR</button></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="eyebrow" data-i18n="eyebrow">Free quote</div>
+  <h1 data-i18n="h1">Let's get your quote started</h1>
+  <p class="sub" data-i18n="sub">Four quick taps, then your details. No paperwork, no pressure.</p>
+
+  <div id="progress">
+    <div class="bar"><i id="barfill"></i></div>
+    <div class="stepno"><span id="stepno"></span><span data-i18n="est">About 1 minute</span></div>
+  </div>
+
+  <div id="stage" aria-live="polite"></div>
+</main>
+
+<script>
+/* ---------- CONFIG ---------- */
+var WEBHOOK = "https://app.calldirector.ai/api/webhooks/flow/6457/a8a4efa619fa82e7157a75e91d8ac6bb0211ddd2e907f0b41202484d5bfe8db9";
+var WHATSAPP_NUMBER = "16127565212"; // TODO: confirm which A2F number is on WhatsApp
+var PHONE_TEL = "+16127565212";
+
+/* ---------- routing helper: works on GitHub Pages project path and on a real domain ---------- */
+function siteRoot(){
+  var h=location.hostname, p=location.pathname.split("/").filter(Boolean);
+  if(/github\.io$/.test(h)) return "/"+(p[0]||"")+"/";
+  return "/";
+}
+document.querySelectorAll("[data-route]").forEach(function(a){a.href=siteRoot()+a.getAttribute("data-route");});
+
+/* ---------- icons ---------- */
+var I={
+ clothing:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 3 6l2 4 3-1v12h8V9l3 1 2-4-5-3a4 4 0 0 1-8 0Z"/></svg>',
+ elec:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>',
+ food:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h14l-1 9H6l-1-9Z"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
+ box:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg>',
+ s:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M8 11l4-2 4 2v5l-4 2-4-2v-5Z"/><path d="m8 11 4 2 4-2M12 13v5"/></svg>',
+ m:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M5 9l7-4 7 4v8l-7 4-7-4V9Z"/><path d="m5 9 7 4 7-4M12 13v8"/></svg>',
+ l:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M2 10l6-3 6 3v6l-6 3-6-3v-6Z"/><path d="m2 10 6 3 6-3M8 13v6"/><path d="m11 7 5-2.5 6 2.5v5.5l-5 2.5"/></svg>',
+ q:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/></svg>',
+ drop:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9Z"/><path d="M9 21v-7h6v7"/></svg>',
+ pick:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h11v9H2zM13 10h5l3 3v3h-8"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>',
+ wa:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12Z"/><path d="M9 9c0 3 3 6 6 6l1-2-2-1-1 .8a4 4 0 0 1-2-2l.8-1-1-2L9 9Z"/></svg>',
+ phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>',
+ text:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M8 9.5h8M8 12.5h5"/></svg>',
+ mail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>'
+};
+
+/* ---------- copy ---------- */
+var T={
+en:{back:"← Back to home",eyebrow:"Free quote",h1:"Let's get your quote started",sub:"Four quick taps, then your details. No paperwork, no pressure.",est:"About 1 minute",
+ step:"Step {n} of {t}",prev:"← Back",
+ q1:"What are you sending?",h1_:"Pick the closest match. You can add details later.",
+ clothing:"Clothing",clothing_s:"Clothes, shoes, fabrics",elec:"Electronics",elec_s:"Phones, laptops, gadgets",food:"Food items",food_s:"Packaged goods",other:"Something else",other_s:"Or not sure yet",
+ q2:"About how big is it?",h2_:"A rough idea is perfect. We'll confirm when we see it.",
+ small:"Small",small_s:"Fits in a shoebox or small bag",medium:"Medium",medium_s:"A standard box or carry-on bag",large:"Large",large_s:"A big box, suitcase or several boxes",unsure:"Not sure",unsure_s:"We'll help you work it out",
+ q3:"How will we get it?",h3_:"Drop it off with us, or we can come to you.",
+ dropoff:"I'll drop it off",dropoff_s:"You bring it to us",pickup:"Please pick it up",pickup_s:"We come to your address",
+ q4:"How should we reach you?",h4_:"Pick what's easiest. We'll use it to send your quote.",
+ whatsapp:"WhatsApp",phone:"Phone call",text:"Text message",email:"Email",
+ q5:"Last step: who are we quoting?",h5_:"So we know who to send your quote to.",
+ name:"Your name",email_l:"Email",email_h:"(for your confirmation)",phone_l:"Phone",phone_h:"(optional)",phone_req:"(needed for your preferred contact)",notes:"Anything else we should know?",notes_h:"(optional)",
+ send:"Send my quote request",sending:"Sending…",
+ e_name:"Please add your name.",e_email:"Please add a valid email so we can confirm your request.",e_phone:"Please add a phone number so we can reach you the way you chose.",
+ e_fail:"Sorry, that didn't go through. Please try again, or reach us directly:",
+ done_h:"Request received!",done_p:"A confirmation is on its way to {email}.",
+ n1:"Our team reviews your request.",n2:"We contact you by {method} with your quote.",n3:"You confirm, and we take care of the rest.",
+ next_h:"What happens next",track:"Track a package",wa_btn:"Chat on WhatsApp",home:"Back to home",
+ wamsg:"Hello A2F Group, I just sent a quote request and have a question."},
+fr:{back:"← Retour à l'accueil",eyebrow:"Devis gratuit",h1:"Commençons votre devis",sub:"Quatre petits choix, puis vos coordonnées. Pas de paperasse, aucune pression.",est:"Environ 1 minute",
+ step:"Étape {n} sur {t}",prev:"← Retour",
+ q1:"Que souhaitez-vous envoyer ?",h1_:"Choisissez ce qui s'en approche le plus. Vous pourrez préciser plus tard.",
+ clothing:"Vêtements",clothing_s:"Vêtements, chaussures, tissus",elec:"Électronique",elec_s:"Téléphones, ordinateurs, appareils",food:"Produits alimentaires",food_s:"Produits emballés",other:"Autre chose",other_s:"Ou pas encore sûr",
+ q2:"Quelle est sa taille approximative ?",h2_:"Une idée approximative suffit. Nous confirmerons en le voyant.",
+ small:"Petit",small_s:"Tient dans une boîte à chaussures ou un petit sac",medium:"Moyen",medium_s:"Une boîte standard ou un bagage cabine",large:"Grand",large_s:"Une grande boîte, une valise ou plusieurs cartons",unsure:"Pas sûr",unsure_s:"Nous vous aidons à estimer",
+ q3:"Comment le récupérons-nous ?",h3_:"Déposez-le chez nous, ou nous venons à vous.",
+ dropoff:"Je le dépose",dropoff_s:"Vous nous l'apportez",pickup:"Venez le chercher",pickup_s:"Nous venons à votre adresse",
+ q4:"Comment vous joindre ?",h4_:"Choisissez le plus simple. Nous l'utiliserons pour vous envoyer votre devis.",
+ whatsapp:"WhatsApp",phone:"Appel téléphonique",text:"SMS",email:"E-mail",
+ q5:"Dernière étape : pour qui est le devis ?",h5_:"Pour savoir à qui envoyer votre devis.",
+ name:"Votre nom",email_l:"E-mail",email_h:"(pour votre confirmation)",phone_l:"Téléphone",phone_h:"(facultatif)",phone_req:"(nécessaire pour votre moyen de contact)",notes:"Autre chose à nous dire ?",notes_h:"(facultatif)",
+ send:"Envoyer ma demande de devis",sending:"Envoi…",
+ e_name:"Veuillez indiquer votre nom.",e_email:"Veuillez indiquer un e-mail valide pour que nous confirmions votre demande.",e_phone:"Veuillez indiquer un numéro pour que nous puissions vous joindre comme choisi.",
+ e_fail:"Désolé, l'envoi n'a pas abouti. Réessayez, ou contactez-nous directement :",
+ done_h:"Demande reçue !",done_p:"Une confirmation est en route vers {email}.",
+ n1:"Notre équipe examine votre demande.",n2:"Nous vous contactons par {method} avec votre devis.",n3:"Vous confirmez, et nous nous occupons du reste.",
+ next_h:"Et ensuite",track:"Suivre un colis",wa_btn:"Écrire sur WhatsApp",home:"Retour à l'accueil",
+ wamsg:"Bonjour A2F Group, je viens d'envoyer une demande de devis et j'ai une question."}
+};
+
+var lang="en";try{lang=localStorage.getItem("a2f_lang")||((navigator.language||"").slice(0,2)==="fr"?"fr":"en");}catch(e){}
+var S={what:null,size:null,handoff:null,contact:null,step:0};
+var STEPS=[
+ {k:"what",q:"q1",h:"h1_",cls:"four",o:[["clothing","clothing","clothing_s"],["elec","elec","elec_s"],["food","food","food_s"],["other","box","other_s"]]},
+ {k:"size",q:"q2",h:"h2_",cls:"four",o:[["small","s","small_s"],["medium","m","medium_s"],["large","l","large_s"],["unsure","q","unsure_s"]]},
+ {k:"handoff",q:"q3",h:"h3_",cls:"",o:[["dropoff","drop","dropoff_s"],["pickup","pick","pickup_s"]]},
+ {k:"contact",q:"q4",h:"h4_",cls:"four",o:[["whatsapp","wa"],["phone","phone"],["text","text"],["email","mail"]]}
+];
+var TOTAL=5;
+function t(k){return (T[lang]||T.en)[k]||k;}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+function setLang(l){
+  lang=l;try{localStorage.setItem("a2f_lang",l);}catch(e){}
+  document.documentElement.lang=l;
+  document.querySelectorAll("[data-i18n]").forEach(function(el){el.textContent=t(el.getAttribute("data-i18n"));});
+  document.querySelectorAll(".lang button").forEach(function(b){b.classList.toggle("on",b.getAttribute("data-lang")===l);});
+  render(true);
+}
+document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){setLang(b.getAttribute("data-lang"));});});
+
+function progress(n){
+  document.getElementById("barfill").style.width=((n)/TOTAL*100)+"%";
+  document.getElementById("stepno").textContent=t("step").replace("{n}",Math.min(n+1,TOTAL)).replace("{t}",TOTAL);
+}
+
+function render(keep){
+  var st=document.getElementById("stage");
+  document.getElementById("progress").style.display="";
+  if(S.step<STEPS.length){
+    var s=STEPS[S.step];progress(S.step);
+    var h='<div class="step"><div class="q">'+esc(t(s.q))+'</div><div class="hint">'+esc(t(s.h))+'</div><div class="opts '+s.cls+'">';
+    s.o.forEach(function(o){
+      h+='<button type="button" class="opt'+(S[s.k]===o[0]?" sel":"")+'" data-v="'+o[0]+'">'+I[o[1]]+'<b>'+esc(t(o[0]))+'</b>'+(o[2]?'<small>'+esc(t(o[2]))+'</small>':'')+'</button>';
+    });
+    h+='</div><div class="nav2">'+(S.step>0?'<button type="button" class="linkbtn" id="prev">'+esc(t("prev"))+'</button>':'<span></span>')+'<span></span></div></div>';
+    st.innerHTML=h;
+    if(keep){var d=st.firstChild;d.style.animation="none";}
+    st.querySelectorAll(".opt").forEach(function(b){b.addEventListener("click",function(){
+      S[s.k]=b.getAttribute("data-v");
+      st.querySelectorAll(".opt").forEach(function(x){x.classList.remove("sel");});b.classList.add("sel");
+      setTimeout(function(){S.step++;render();},230);
+    });});
+    var p=document.getElementById("prev");if(p)p.addEventListener("click",function(){S.step--;render();});
+  } else if(S.step===STEPS.length){
+    progress(S.step);
+    var needPhone=(S.contact==="whatsapp"||S.contact==="phone"||S.contact==="text");
+    st.innerHTML='<div class="step"><div class="q">'+esc(t("q5"))+'</div><div class="hint">'+esc(t("h5_"))+'</div>'+
+    '<div class="err" id="err"></div>'+
+    '<form id="f" novalidate>'+
+    '<div class="f"><label for="nm">'+esc(t("name"))+'</label><input id="nm" autocomplete="name" value="'+esc(S.nm||"")+'"></div>'+
+    '<div class="f"><label for="em">'+esc(t("email_l"))+' <span>'+esc(t("email_h"))+'</span></label><input id="em" type="email" inputmode="email" autocomplete="email" value="'+esc(S.em||"")+'"></div>'+
+    '<div class="f"><label for="ph">'+esc(t("phone_l"))+' <span>'+esc(needPhone?t("phone_req"):t("phone_h"))+'</span></label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="+1 612 555 0123" value="'+esc(S.ph||"")+'"></div>'+
+    '<div class="f"><label for="nt">'+esc(t("notes"))+' <span>'+esc(t("notes_h"))+'</span></label><textarea id="nt">'+esc(S.nt||"")+'</textarea></div>'+
+    '<div class="hp" aria-hidden="true"><label>Website</label><input id="web" tabindex="-1" autocomplete="off"></div>'+
+    '<div class="nav2"><button type="button" class="linkbtn" id="prev">'+esc(t("prev"))+'</button><button class="btn gold" type="submit" id="go">'+esc(t("send"))+'</button></div></form></div>';
+    document.getElementById("prev").addEventListener("click",function(){keepForm();S.step--;render();});
+    document.getElementById("f").addEventListener("submit",submit);
+  } else {
+    document.getElementById("progress").style.display="none";
+    var methodName=t(S.contact);
+    var wa="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(t("wamsg"));
+    st.innerHTML='<div class="step done">'+
+    '<svg class="check" viewBox="0 0 84 84"><circle cx="42" cy="42" r="40"/><path d="M26 43l11 11 21-23"/></svg>'+
+    '<h1>'+esc(t("done_h"))+'</h1><p class="sub" style="margin-inline:auto">'+esc(t("done_p").replace("{email}",S.em))+'</p>'+
+    '<div class="summary"><span class="pill">'+esc(t(S.what))+'</span><span class="pill">'+esc(t(S.size))+'</span><span class="pill">'+esc(t(S.handoff))+'</span><span class="pill">'+esc(methodName)+'</span></div>'+
+    '<div class="next"><div><b>1</b><span>'+esc(t("n1"))+'</span></div><div><b>2</b><span>'+esc(t("n2").replace("{method}",methodName.toLowerCase()))+'</span></div><div><b>3</b><span>'+esc(t("n3"))+'</span></div></div>'+
+    '<div class="cta"><a class="btn wa" href="'+wa+'" target="_blank" rel="noopener">'+esc(t("wa_btn"))+'</a><a class="btn line" data-route="track/" href="#">'+esc(t("track"))+'</a><a class="btn line" data-route="" href="#">'+esc(t("home"))+'</a></div></div>';
+    st.querySelectorAll("[data-route]").forEach(function(a){a.href=siteRoot()+a.getAttribute("data-route");});
+  }
+}
+function keepForm(){var g=function(i){var e=document.getElementById(i);return e?e.value:"";};S.nm=g("nm");S.em=g("em");S.ph=g("ph");S.nt=g("nt");}
+
+function phoneE164(p){
+  var d=String(p||"").replace(/[^\d+]/g,"");
+  if(!d)return "";
+  if(d.charAt(0)==="+")return "+"+d.replace(/\D/g,"");
+  var n=d.replace(/\D/g,"");
+  if(n.length===10)return "+1"+n;
+  if(n.length===11&&n.charAt(0)==="1")return "+"+n;
+  return n;
+}
+function showErr(m,withHelp){
+  var e=document.getElementById("err");e.style.display="block";
+  e.innerHTML=esc(m)+(withHelp?' <a href="tel:'+PHONE_TEL+'">+1 (612) 756-5212</a> · <a href="https://wa.me/'+WHATSAPP_NUMBER+'" target="_blank" rel="noopener">WhatsApp</a>':'');
+  e.scrollIntoView({behavior:"smooth",block:"center"});
+}
+function submit(ev){
+  ev.preventDefault();keepForm();
+  var web=document.getElementById("web").value;
+  if(web){S.step=STEPS.length+1;render();return;} /* honeypot: pretend success */
+  var needPhone=(S.contact==="whatsapp"||S.contact==="phone"||S.contact==="text");
+  if(!S.nm.trim()){showErr(t("e_name"));return;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(S.em.trim())){showErr(t("e_email"));return;}
+  if(needPhone&&S.ph.replace(/\D/g,"").length<7){showErr(t("e_phone"));return;}
+  var btn=document.getElementById("go");btn.disabled=true;btn.textContent=t("sending");
+  var body={contactName:S.nm.trim(),contactEmail:S.em.trim(),contactPhone:phoneE164(S.ph),
+    data:{what_shipping:t0(S.what),size:t0(S.size),handoff:t0(S.handoff),contact_method:t0(S.contact),language:lang,notes:S.nt||"",source:"website-quote-wizard"}};
+  fetch(WEBHOOK,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+   .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);S.step=STEPS.length+1;render();window.scrollTo({top:0,behavior:"smooth"});})
+   .catch(function(){btn.disabled=false;btn.textContent=t("send");showErr(t("e_fail"),true);});
+}
+/* send the English label to the team regardless of the visitor's language */
+function t0(k){return T.en[k]||k;}
+
+setLang(lang);
+</script>
+</body>
+</html>
