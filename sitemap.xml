@@ -2,7 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://a2fshipping.com/</loc>
-    <lastmod>2026-10-04T18:25:38.431Z</lastmod>
+    <lastmod>2026-10-04T18:36:22.418Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/track/</loc>
+    <lastmod>2026-10-04T18:36:16.093Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/shop-ship/</loc>
+    <lastmod>2026-10-04T18:35:38.394Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://a2fshipping.com/quote/</loc>
+    <lastmod>2026-10-04T18:34:51.840Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -13,11 +28,6 @@
   <url>
     <loc>https://a2fshipping.com/how-it-works/</loc>
     <lastmod>2026-10-04T16:40:38.787Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/quote/</loc>
-    <lastmod>2026-10-04T16:40:23.810Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -38,16 +48,6 @@
   <url>
     <loc>https://a2fshipping.com/policies/</loc>
     <lastmod>2026-10-04T13:38:09.250Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/track/</loc>
-    <lastmod>2026-10-04T13:37:41.964Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/shop-ship/</loc>
-    <lastmod>2026-10-04T13:37:30.821Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
