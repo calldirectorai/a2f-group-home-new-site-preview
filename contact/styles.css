@@ -21,6 +21,7 @@ main{padding:clamp(28px,6vw,60px) 0 70px}
 h1{font-size:clamp(1.8rem,5.5vw,2.8rem);letter-spacing:-.02em;line-height:1.1;color:var(--navy);font-weight:800}
 .sub{color:var(--muted);margin:10px 0 26px;max-width:58ch}
 html[lang="fr"] [data-l="en"]{display:none}html[lang="en"] [data-l="fr"]{display:none}
+.pnav{display:none;gap:2px;margin:0 auto}.pnav a,.pstrip a{white-space:nowrap;font-weight:600;font-size:.94rem;color:var(--ink);padding:10px 10px;border-radius:10px;text-decoration:none}.pnav a:hover,.pnav a[aria-current]{background:var(--bg);color:var(--navy)}.pstrip{display:flex;gap:8px;overflow-x:auto;padding:10px 4%;border-top:1px solid var(--line);background:#fff;scrollbar-width:none}.pstrip::-webkit-scrollbar{display:none}.pstrip a{flex:none;border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;min-height:42px;display:inline-flex;align-items:center}.pstrip a[aria-current]{background:var(--navy);color:#fff;border-color:var(--navy)}html[lang="fr"] [data-l="en"]{display:none}html[lang="en"] [data-l="fr"]{display:none}@media(min-width:1180px){.pnav{display:flex}.pstrip{display:none}.nav .sp{display:none}.nav .back{margin-left:auto}}
 .togo{background:#eef4ff;border:1px solid #c6d8f7;border-radius:16px;padding:16px 18px;color:var(--navy);margin:0 0 18px}
 .togo strong{display:block;margin-bottom:4px}
 .togo p{color:#27406a;margin-bottom:10px}
