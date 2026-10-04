@@ -362,28 +362,28 @@
     <nav class="nav-desktop" aria-label="Main">
       <a href="#top" data-i18n="nav_home">Home</a>
       <a href="#services" data-i18n="nav_ship">Shipping</a>
-      <a href="#shop-ship" data-i18n="nav_shop">Shop &amp; Ship</a>
-      <a href="#how" data-i18n="nav_how">How It Works</a>
-      <a href="#track" data-i18n="nav_track">Track Shipment</a>
-      <a href="#faq" data-i18n="nav_faq">FAQ</a>
-      <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <a href="/shop-ship/" data-route="shop-ship/" data-i18n="nav_shop">Shop &amp; Ship</a>
+      <a href="/how-it-works/" data-route="how-it-works/" data-i18n="nav_how">How It Works</a>
+      <a href="/track/" data-route="track/" data-i18n="nav_track">Track Shipment</a>
+      <a href="/how-it-works/#faq" data-route="how-it-works/#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="/contact/" data-route="contact/" data-i18n="nav_contact">Contact</a>
     </nav>
     <div class="hdr-actions">
       <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true" class="on">EN</button><button type="button" data-lang="fr" aria-pressed="false">FR</button></div>
       <a class="acct" href="https://a2f-group.com/auth/login" rel="noopener" data-i18n="nav_acct">My account</a>
       <a class="btn btn-wa h-wa" data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic ic-fill" aria-hidden="true"><use href="#i-wa"/></svg><span class="lbl-wa" data-i18n="cta_wa">Chat on WhatsApp</span></a>
-      <a class="btn btn-gold h-quote" href="#quote" data-i18n="cta_quote">Get a Quote</a>
+      <a class="btn btn-gold h-quote" href="/quote/" data-route="quote/" data-i18n="cta_quote">Get a Quote</a>
       <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
   <nav id="menu" class="menu" aria-label="Mobile" hidden>
     <a href="#top" data-i18n="nav_home">Home</a>
     <a href="#services" data-i18n="nav_ship">Shipping</a>
-    <a href="#shop-ship" data-i18n="nav_shop">Shop &amp; Ship</a>
-    <a href="#how" data-i18n="nav_how">How It Works</a>
-    <a href="#track" data-i18n="nav_track">Track Shipment</a>
-    <a href="#faq" data-i18n="nav_faq">FAQ</a>
-    <a href="#contact" data-i18n="nav_contact">Contact</a>
+    <a href="/shop-ship/" data-route="shop-ship/" data-i18n="nav_shop">Shop &amp; Ship</a>
+    <a href="/how-it-works/" data-route="how-it-works/" data-i18n="nav_how">How It Works</a>
+    <a href="/track/" data-route="track/" data-i18n="nav_track">Track Shipment</a>
+    <a href="/how-it-works/#faq" data-route="how-it-works/#faq" data-i18n="nav_faq">FAQ</a>
+    <a href="/contact/" data-route="contact/" data-i18n="nav_contact">Contact</a>
     <a href="https://a2f-group.com/auth/login" rel="noopener" data-i18n="nav_acct">My account</a>
   </nav>
 </header>
@@ -797,10 +797,10 @@
         <h2 data-i18n="ft_links">Quick links</h2>
         <ul>
           <li><a href="#services" data-i18n="nav_ship">Shipping</a></li>
-          <li><a href="#shop-ship" data-i18n="nav_shop">Shop &amp; Ship</a></li>
-          <li><a href="#track" data-i18n="ft_track">Tracking</a></li>
-          <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
-          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          <li><a href="/shop-ship/" data-route="shop-ship/" data-i18n="nav_shop">Shop &amp; Ship</a></li>
+          <li><a href="/track/" data-route="track/" data-i18n="ft_track">Tracking</a></li>
+          <li><a href="/how-it-works/#faq" data-route="how-it-works/#faq" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="/contact/" data-route="contact/" data-i18n="nav_contact">Contact</a></li>
           <li><a href="/pickup/" data-route="pickup/" data-i18n="ft_pickup">Pickup requests</a></li>
         </ul>
       </nav>
@@ -826,7 +826,7 @@
 
 <!-- Mobile action bar -->
 <div class="mbar" role="region" aria-label="Quick actions">
-  <a class="btn btn-gold" href="#quote" data-i18n="cta_quote">Get a Quote</a>
+  <a class="btn btn-gold" href="/quote/" data-route="quote/" data-i18n="cta_quote">Get a Quote</a>
   <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic ic-fill" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="cta_wa_short">WhatsApp</span></a>
 </div>
 
@@ -994,7 +994,7 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!menu.hidde
 /* ---- Highlight the current section in the desktop nav ---- */
 if("IntersectionObserver" in window){
   var navLinks=$$(".nav-desktop a"),byId={};
-  navLinks.forEach(function(a){byId[a.getAttribute("href").slice(1)]=a;});
+  navLinks.forEach(function(a){var h=a.getAttribute("href");if(h.charAt(0)==="#"){byId[h.slice(1)]=a;}});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){navLinks.forEach(function(a){a.removeAttribute("aria-current");});if(byId[e.target.id]){byId[e.target.id].setAttribute("aria-current","true");}}});},{rootMargin:"-45% 0px -50% 0px"});
   Object.keys(byId).forEach(function(id){var s=document.getElementById(id);if(s&&id!=="top"){io.observe(s);}});
 }
