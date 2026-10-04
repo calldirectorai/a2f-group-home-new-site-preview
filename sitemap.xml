@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://a2fshipping.com/</loc>
+    <lastmod>2026-10-04T05:40:11.711Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://a2fshipping.com/account/</loc>
     <lastmod>2026-10-04T05:40:03.388Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -48,11 +53,6 @@
   <url>
     <loc>https://a2fshipping.com/quote/</loc>
     <lastmod>2026-10-04T05:39:16.003Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://a2fshipping.com/</loc>
-    <lastmod>2026-10-04T05:39:15.782Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
