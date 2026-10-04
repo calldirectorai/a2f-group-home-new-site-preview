@@ -246,6 +246,7 @@ details.acc .ans p{margin:0 0 .8em}
 .site-footer a:hover{color:var(--gold2);text-decoration:underline}
 .site-footer p{margin:0 0 10px}
 .copy{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;padding-top:20px;font-size:.88rem;color:#9fb3d1}
+html[lang="fr"] [data-l="en"]{display:none}html[lang="en"] [data-l="fr"]{display:none}.foot-top{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:30px}.foot-top p{margin:0;max-width:46ch}.foot-top .brand{margin:0}.foot4{display:grid;grid-template-columns:1fr 1fr;gap:28px 20px}.foot4 .fc-contact{grid-column:1/-1}@media(min-width:900px){.foot4{grid-template-columns:repeat(4,1fr);gap:34px}.foot4 .fc-contact{grid-column:auto}}.foot4 h2{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin:0 0 12px}.foot4 ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}.foot4 a{color:#e7eefb;text-decoration:none;display:inline-block;padding:7px 0}.foot4 a:hover{color:var(--gold2);text-decoration:underline}.foot4 .fc-contact p{margin:0 0 10px}.foot4 .fc-contact .btn{margin-top:4px;padding:11px 20px;min-height:46px;color:#04230f}.foot4 .fc-contact .btn:hover{text-decoration:none;color:#04230f}
 /* mobile bar */
 .mbar{position:fixed;left:12px;right:84px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:90;display:flex;gap:8px}
 .mbar .btn{flex:1;min-height:52px;padding:10px 12px;font-size:.95rem;box-shadow:0 8px 24px rgba(10,31,61,.28)}
